@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script
+      src="https://kit.fontawesome.com/1c4d039add.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>
+            Hi, I'm <span>Surya</span><br />
+            From Coimbatore
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!----------about-------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/about me.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <br />
+            <p>
+              I’m a Computer Science and Design undergraduate with a strong
+              foundation in Python, SQL, and AWS cloud technologies. I enjoy
+              building practical, scalable solutions and have hands-on
+              experience deploying cloud-based and multi-tier applications. With
+              a mindset focused on continuous learning and teamwork, I aim to
+              contribute meaningfully while growing alongside innovative
+              projects and people.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>Python Devlopment</span><br />Developing software Using
+                  Python
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2022</span><br/>####</li>
+                <li><span>2024</span><br/>####</li>
+                <li><span>2026</span><br/>####</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span
+                    >Bachelor Of Engineering in Computer Science and Design </span
+                    > <br />Karpagam College Of Engineering<br />CGPA - 7.78*
+                </li>
+                <li>
+                  <span>Class XII</span><br />Karaikudi Maharishi Vidya
+                  Manddir<br />Percentage - 84
+                </li>
+                <li>
+                  <span>Class X</span><br />
+                  Karaikudi Maharishi Vidya Manddir<br />Percentage - 86
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------services----------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">What I Do</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              I build responsive and scalable web applications using modern technologies. My focus is on performance, clean code architecture, and delivering seamless user experiences across all devices.
+            </p>
+            <a href="#">Explore</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX <br>Design</h2>
+            <p>
+              I design intuitive and visually engaging interfaces that improve usability and user interaction. My approach focuses on clean layouts, accessibility, and modern design standards.
+            </p>
+            <a href="#">Explore</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Cloud & DevOps</h2>
+            <p>
+              I deploy and manage applications using cloud platforms and DevOps practices. By leveraging tools like AWS, Docker, and automation workflows, I ensure scalable and reliable infrastructure.
+            </p>
+            <a href="#">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------portfolio------------------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/efe23c48c4d49a04931daedf6cafea7a.jpg" alt="" />
+            <div class="layer">
+              <h3>A Self Evolving Cloud Architecture</h3>
+              <p>For Autonumous Scaling and Deployment Intelligence</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/b48245b72caf378b12ae4239e84041ff.jpg" alt="" />
+            <div class="layer">
+              <h3>A Self Evolving Cloud Architecture</h3>
+              <p>For Autonumous Scaling and Deployment Intelligence</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/acc17bf719224e186bd0b819fcb62c9e.jpg" alt="" />
+            <div class="layer">
+              <h3>A Self Evolving Cloud Architecture</h3>
+              <p>For Autonumous Scaling and Deployment Intelligence</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+      </div>
+    </div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p ><i class="fa-solid fa-paper-plane"></i>narayananv6525@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 6380795973</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-linkedin"></i></a>
+                </div>
+                <a href="images/Narayanan V - Resume.pdf" Download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    <!-- <span id="msg">Great things start with a simple message.<br>Thanks for reaching out! 👍"</span>  -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+      <p> Copyright © Surya. Made with <i class="fa-solid fa-heart"></i>
+      by Surya</p>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
