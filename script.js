@@ -36,16 +36,21 @@ function closemenu(){
 const scriptURL = "https://script.google.com/macros/s/AKfycbzECwzlFnTvh_meS3IbJ0fbyFDGKZ8nS8mf0UGD5-54Uk1wY8atpbayK6qPFROtAUdT/exec";
 
 const form = document.forms["submit-to-google-sheet"];
+const msg= document.getElementById("msg")
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
+    msg.innerHTML = "Sending...";
 
     fetch(scriptURL, {
         method: "POST",
         body: new FormData(form)
     })
     .then(response => {
-        alert("Message sent successfully!");
+        msg.innerHTML="Got your message - I'll get back to you soon "
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
         form.reset();
     })
     .catch(error => {
